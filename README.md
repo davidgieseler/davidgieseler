@@ -6,10 +6,5 @@
   <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=davidgieseler81&layout=compact&langs_count=7&theme=tokyonight"/>
   </div>
   
-  <h1></h1>
-  
-  <div align="center">
-    
- ![Snake animation](https://github.com/davidgieseler81/blob/output/github-contribution-grid-snake.svg)
-    
-  </div>
+  <h1></h1>  
+
