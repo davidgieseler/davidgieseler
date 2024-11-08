@@ -2,7 +2,7 @@ name: Generate Snake Animation
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Executa a cada 12 horas
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 jobs:
@@ -20,17 +20,25 @@ jobs:
         with:
           github_user_name: davidgieseler
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg
+            dist/github-grid-snake.svg
+            dist/github-grid-snake-dark.svg
           
-          # Configurações personalizadas
-          color_snake: "9D4EDD"
+          # Configurações aprimoradas
+          color_snake: "C77DFF"            # Cobra em roxo neon
           color_dots: |
-            "#0D1117"
-            "#7B2CBF"
-            "#9D4EDD"
-            "#C77DFF"
-            "#E0AAFF"
+            "#161B22"                      # Fundo escuro do GitHub
+            "#4C3A51"                      # Roxo escuro
+            "#9D4EDD"                      # Roxo médio
+            "#C77DFF"                      # Roxo claro
+            "#E0AAFF"                      # Roxo mais claro
+          
+          # Configurações para a cobra crescer
+          snake_animations: |
+            growing_snake
+          bg_color: "#0D1117"             # Fundo escuro personalizado
+          snake_size: 2                    # Tamanho inicial da cobra
+          max_snake_length: 15             # Comprimento máximo
+          snake_growth_scale: 1.2          # Taxa de crescimento após comer
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
