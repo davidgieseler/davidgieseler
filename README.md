@@ -47,4 +47,4 @@
 <br>
 
 <!-- Snake animation -->
-![Snake animation](https://github.com/davidgieseler/davidgieseler/blob/output/github-contribution-grid-snake.svg)
+![Snake animation](https://github.com/davidgieseler/davidgieseler/blob/output/github-grid-snake.svg)
