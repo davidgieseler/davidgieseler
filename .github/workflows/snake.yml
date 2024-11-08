@@ -23,22 +23,21 @@ jobs:
             dist/github-grid-snake.svg
             dist/github-grid-snake-dark.svg
           
-          # Configurações aprimoradas
-          color_snake: "C77DFF"            # Cobra em roxo neon
+          # Configurações de cores personalizadas
+          color_snake: "C77DFF"            # Cobra roxa neon
           color_dots: |
-            "#161B22"                      # Fundo escuro do GitHub
-            "#4C3A51"                      # Roxo escuro
-            "#9D4EDD"                      # Roxo médio
-            "#C77DFF"                      # Roxo claro
-            "#E0AAFF"                      # Roxo mais claro
+            "#0D1117"                      # Fundo neutro escuro
+            "#FFA500"                      # Laranja (cor que lembra comida para commits)
+            "#4C3A51"                      # Roxo escuro para variação de fundo
+            "#C77DFF"                      # Roxo claro para variedade
           
-          # Configurações para a cobra crescer
+          # Configurações para o crescimento da cobra
           snake_animations: |
             growing_snake
-          bg_color: "#0D1117"             # Fundo escuro personalizado
+          bg_color: "#0D1117"              # Fundo escuro personalizado
           snake_size: 2                    # Tamanho inicial da cobra
-          max_snake_length: 15             # Comprimento máximo
-          snake_growth_scale: 1.2          # Taxa de crescimento após comer
+          max_snake_length: 20             # Comprimento máximo ajustado
+          snake_growth_scale: 1.5          # Taxa de crescimento aumentada para mais visibilidade
 
       - uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
